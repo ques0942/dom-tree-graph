@@ -11,7 +11,7 @@ const rootId = uuid();
 elems.push({id: rootId, elem: root});
 
 const traverse = (parentId, parentNode) => {
-    parentNode.children.forEach(node => {
+    Array.from(parentNode.children).forEach(node => {
         const childId = uuid();
         visNodes.add({id: childId, label: createLabel(node)});
         visEdges.add({from: parentId, to: childId});
