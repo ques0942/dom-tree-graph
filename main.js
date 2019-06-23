@@ -1,7 +1,7 @@
 'use strict';
 
-vis = require('vis');
-uuid = require('uuid');
+const vis = require('vis');
+const uuid = require('uuid/v4');
 console.log('script start');
 const visNodes = new vis.DataSet();
 const visEdges = new vis.DataSet();
