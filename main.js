@@ -44,7 +44,9 @@ console.log(visEdges);
 console.log('test');
 
 // create a network
-var container = document.getElementById('graph');
+var container = document.createElement('div');
+container.id = 'graph';
+body.appendChild(container);
 
 // provide the data in the vis format
 var data = {
