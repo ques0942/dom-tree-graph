@@ -33,7 +33,6 @@ const createLabel = (elem) => {
     return values.join(', ');
 }
 
-// visNodes.add({id: rootId, label: `id: ${root.id}, class: ${root.className}, tag: ${root.tagName}`, color: 'red', x: 0});
 visNodes.add({id: rootId, label: createLabel(root), color: 'red', x: 0});
 while (elems.length > 0) {
     let top = elems.shift();
@@ -46,7 +45,7 @@ console.log('test');
 // create a network
 const container = document.createElement('div');
 container.id = 'graph';
-root.appendChild(container);
+root.insertBefore(container, root.firstChild);
 
 // provide the data in the vis format
 const data = {
