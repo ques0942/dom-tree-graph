@@ -12,7 +12,7 @@ const rootId = uuid();
 elems.push({id: rootId, elem: root});
 
 const traverse = (parentId, parentNode) => {
-    parentNode.childNodes.forEach(node => {
+    parentNode.children.forEach(node => {
         const childId = uuid();
         visNodes.add({id: childId, label: createLabel(node)});
         visEdges.add({from: parentId, to: childId});
