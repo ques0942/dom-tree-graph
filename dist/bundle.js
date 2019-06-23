@@ -45,19 +45,19 @@ console.log(visEdges);
 console.log('test');
 
 // create a network
-var container = document.createElement('div');
+const container = document.createElement('div');
 container.id = 'graph';
-body.appendChild(container);
+root.appendChild(container);
 
 // provide the data in the vis format
-var data = {
+const data = {
     nodes: visNodes,
     edges: visEdges
 };
-var options = {};
+const options = {};
 
 // initialize your network!
-var network = new vis.Network(container, data, options);
+const network = new vis.Network(container, data, options);
 
 },{"uuid/v4":4,"vis":5}],2:[function(require,module,exports){
 /**
