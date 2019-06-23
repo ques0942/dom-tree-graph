@@ -46,6 +46,8 @@ console.log('test');
 // create a network
 const container = document.createElement('div');
 container.id = 'graph';
+container.width = '100%';
+container.height = '400px';
 root.insertBefore(container, root.firstChild);
 
 // provide the data in the vis format
